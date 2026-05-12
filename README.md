@@ -1,7 +1,5 @@
-### GitHub Stats
-![Your GitHub Stats](./profile-stats/stats.svg)
+###  GitHub Stats
+![Your GitHub Stats](profile-stats)
 
-### Most Used Languages
-![Top Langs](./profile-stats/top-langs.svg)
-
-
+###  Most Used Languages
+![Top Langs](profile-stats)
