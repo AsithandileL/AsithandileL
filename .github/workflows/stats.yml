@@ -1,0 +1,17 @@
+name: Update README Cards
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily update
+  workflow_dispatch: # Manual trigger
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: readme-tools/github-readme-stats-action@v1
+        with:
+          path: profile-stats/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+      # ... additional steps to generate/commit SVG
