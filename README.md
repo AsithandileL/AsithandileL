@@ -1,6 +1,6 @@
 ###  GitHub Stats
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=AsithandileL&show_icons=true&theme=dark)
+![Your GitHub Stats](shion.dev)
 
 ###  Most Used Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AsithandileL&layout=compact&theme=dark)
+![Top Langs](shion.dev)
 
