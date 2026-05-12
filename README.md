@@ -1,6 +1,7 @@
-###  GitHub Stats
-![Your GitHub Stats](shion.dev)
+### GitHub Stats
+![Your GitHub Stats](./profile-stats/stats.svg)
 
-###  Most Used Languages
-![Top Langs](shion.dev)
+### Most Used Languages
+![Top Langs](./profile-stats/top-langs.svg)
+
 
