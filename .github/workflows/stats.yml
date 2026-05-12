@@ -33,5 +33,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@github.com"
           git add profile-stats/*.svg
-          git commit -m "Fix syntax using options input" || exit 0
+          git commit -m "Force dark theme execution on languages" || exit 0
           git push
