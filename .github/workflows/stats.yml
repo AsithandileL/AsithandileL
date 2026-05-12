@@ -9,9 +9,28 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: readme-tools/github-readme-stats-action@v1
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Generate Github Stats Card
+        uses: readme-tools/github-readme-stats-action@v1
         with:
+          card: stats
           path: profile-stats/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-      # ... additional steps to generate/commit SVG
+
+      - name: Generate Top Languages Card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          path: profile-stats/langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          args: --layout=compact
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@github.com"
+          git add profile-stats/*.svg
+          git commit -m "Update profile status cards" || exit 0
+          git push
